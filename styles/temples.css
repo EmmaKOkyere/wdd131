@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,700&family=Poppins&display=swap');
+
+:root {
+    --background-color: rgba(0, 0, 0, 0.8);
+    --secondary-color: ;
+    --accent1-color: ;
+    --accent2-color: ;
+
+    --heading-font: "Montserrat";
+    --paragraph-font: "Poppins";
+
+    --nav-background-color: hsl(0, 0%, 0%, 0.8);
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #32ce73;
+    --nav-hover-background-color: rgba(30, 158, 160, 0.282);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+body {
+    background-color: lightgray;
+    background-size: cover;
+    font-family: var(--paragraph-font);
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+}
+
+.header__menu {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 30px;
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+    border-radius: 5px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu::before {
+    content: "≡";
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.header__nav {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    background-color: hsl(0, 0%, 0%, 0.8);
+    border-radius: 2px;
+}
+
+.js-show-header-nav {
+    visibility: visible;
+}
+
+.header__menu.show::before {
+    content: "❌";
+    display: inline-block;
+    font-size: 20px;
+}
+
+.header__list {
+    list-style-type: none;
+}
+
+.header__links {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    display: block;
+    padding: 10px;
+    font-family: var(--heading-font);
+}
+
+.header__list li a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.main {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--nav-link-color);
+}
+
+#lastModified {
+    color: var(--nav-hover-link-color);
+    font-weight: 600;
+}
