@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Okyere</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Emmanuel Okyere - This website provides information like temperature, nature, and more about this country, Ghana">
+  <meta name="author" content="Emmanuel Okyere">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Ghana</h1>
+    </header>
+    <main>
+        <div class="hero__image hero__container">
+                <img src="images/placeinaccra.png" alt="A place in Ghana, Accra" >
+            <section class="data__section">
+                <h2>Data</h2>
+                <div class="data__left">
+                    <ul>
+                        <li>Area: </li>
+                        <li>Population: </li>
+                        <li>Capital: </li>
+                        <li>Languages: </li>
+                        <li>Currency: </li>
+                        <li>TimeZone: </li>
+                        <li>Calling Code: </li>
+                        <li>Internet TLD: </li>
+                    </ul>
+                </div>
+                <div class="data__right">
+                    <ul>
+                        <li>GA-184-8219</li>
+                        <li>35,064,272</li>
+                        <li>Accra</li>
+                        <li>English</li>
+                        <li>Cedis</li>
+                        <li>GMT+0</li>
+                        <li>+233</li>
+                        <li>.gh</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="weather__section">
+                <h2 class="weather__title">Weather</h2>
+                <img class="weather__icon" src="images/cloud-rain-icon.png" alt="Cloudy icon with rain" width="50"
+                    height="50">
+                <div class="weather__left">
+                    <ul>
+                        <li>Temperature: </li>
+                        <li>Conditions: </li>
+                        <li>Wind: </li>
+                        <li>Wind Chill: </li>
+                    </ul>
+                </div>
+                <div class="weather__right">
+                    <ul>
+                        <li id="temperature"></li>
+                        <li>Cloudy/Rain</li>
+                        <li id="wind"></li>
+                        <li id="windChill"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+  <footer class="footer">
+    <p><span id="currentyear">©</span> 👔 Emmanuel Okyere 👔 Accra - Ghana</p>
+    <p id="lastModified">Last Modified: </p>
+  </footer>
+  <p> <span id="currentyear"></span> </p>
+
+</body>
+
+</html>
