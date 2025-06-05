@@ -1,0 +1,46 @@
+ body {background: #fffbe9;
+     color: #212121;
+      font-family: 'Lato', Arial, sans-serif;
+    }
+
+ h1, h2 {color: #23875f;
+     font-family: 'Montserrat', sans-serif;}
+
+ .accent {
+    color: #ef7d00;
+}
+
+ .wireframe {border: 1px solid #bbb;
+     margin: 1em 0;
+     padding: 1em;
+     background: #f4f4f4;
+     font-family: monospace;}
+
+ .logo {font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     font-size: 2em; 
+ }
+
+ .colorbox {display:inline-block;
+     width: 30px;
+     height: 30px;
+     margin: 0 8px;
+     vertical-align: middle;
+    } 
+
+ .color1{
+    background:#23875f;
+     border:1px solid #111;
+  }
+
+ .color2 {background:#ef7d00;
+     border:1px solid #111;
+     }
+
+ .footer {
+    text-align: center;
+    place-content: center;
+    background-color: var(--darker-background-color);
+    font-size: 16px;
+    font-weight: 700;
+}
