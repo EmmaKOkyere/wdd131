@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid: 3rem auto 4rem / auto;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100%;
+    margin-inline: auto;
+}
+
+header {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background-color: #2a5691;
+    color: #fff;
+    min-height: 48px;
+}
+
+main {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1.5px solid #2a5691;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+legend {
+    color: #2a5691;
+}
+
+label,
+select,
+input,
+textarea,
+div {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    font-weight: normal;
+}
+
+select,
+input[type='text'],
+textarea,
+input[type="submit"],
+input[type="date"] {
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    min-height: 48px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #3498db;
+}
+
+select,
+.stars,
+input[type="date"],
+textarea,
+.quality,
+input[name="username"] {
+    margin-top: 10px;
+}
+
+input[type='checkbox'] {
+    transform: scale(1.5);
+    display: initial;
+    width: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+
+label {
+    max-width: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 5px;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+    display: flex;
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+    display: block;
+    font-size: inherit;
+}
+
+input[type='submit'] {
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000;
+    box-shadow: 1px 1px 4px #000000;
+    background-color: #2a5691;
+    color: #fff;
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: gold;
+    color: #000;
+}
+
+.footer {
+    font-size: clamp(12px, 2vw, 18px);
+    align-content: center;
+    text-align: center;
+    background-color: #2a5691;
+    color: #fff;
+    min-height: 48px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.footer p:nth-child(2) {
+    color: gold;
+}

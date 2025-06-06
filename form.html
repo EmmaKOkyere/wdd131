@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 | Temple Album</title>
+  <meta name="description" content="This site contains a form that is user friendly for both, mobile and desktop">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/form-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="scripts/form.js"></script>
+</head>
+
+  <body id="form-body">
+    <header>
+        <h1>Create a Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label>Select a product to review from your previous purchases
+                    <select required name="productName" id="products">
+                        <option value="" disabled selected>Select a Product</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div>Rate your product</div>
+                <div class="stars">
+                    <input required type="radio" name="stars" id="fivestar" value="5">
+                    <label for="fivestar"></label>
+
+                    <input required type="radio" name="stars" id="fourstar" value="4">
+                    <label for="fourstar"></label>
+
+                    <input required type="radio" name="stars" id="threestar" value="3">
+                    <label for="threestar"></label>
+
+                    <input required type="radio" name="stars" id="twostar" value="2">
+                    <label for="twostar"></label>
+
+                    <input required type="radio" name="stars" id="onestar" value="1">
+                    <label for="onestar"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Purchase</legend>
+                <label>Date of purchase / Product was delivered
+                    <input placeholder="mm/dd/yyyy" type="date" id="purchase-date" name="dop" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Useful Features</legend>
+                <div>Check all that apply:</div>
+                <label class="quality"><input type="checkbox" id="product-features" name="features"
+                        value="quality">Quality</label>
+                <label><input type="checkbox" id="category1" name="features" value="worth">Value for
+                    money</label>
+                <label><input type="checkbox" id="category2" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="category3" name="features" value="looks">Looks</label>
+                <label><input type="checkbox" id="category4" name="features" value="battery">Battery Life</label>
+                <label><input type="checkbox" id="category5" name="features" value="connectivity">Connectivity</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <label>Review your product
+                    <textarea name="review" id="written-review"
+                        placeholder="What did you like or dislike about this product?"></textarea>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>User Name</legend>
+                <label>Name (Optional)
+                    <input type="text" name="username" id="name" placeholder="Enter your name">
+                </label>
+            </fieldset>
+
+            <input id="submit-button" type="submit" value="submit">
+
+        </form>
+    </main>
+  <footer class="footer">
+    <p><span id="currentyear">©</span> 👔 Emmanuel Okyere 👔 Accra - Ghana</p>
+    <p id="lastModified">Last Modified: </p>
+  </footer>
+</body>
+
+</html>
+
