@@ -1,0 +1,92 @@
+.booking__main fieldset legend {
+    font-weight: bold;
+}
+
+.booking__main {
+    margin-inline: auto;
+    width: 100%;
+}
+
+.booking__main h1 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+    text-align: center;
+}
+
+.booking__form {
+    padding: 10px;
+    margin-inline: auto;
+    width: 80%;
+    border: 1px solid var(--princeton-orange);
+    border-radius: 5px;
+    display: grid;
+    gap: 15px;
+}
+
+.booking__form fieldset {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.shape__fieldset label {
+    text-align: center;
+}
+
+.addon__fieldset input[type='checkbox'],
+.work__fieldset input[type='checkbox'] {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.addon__fieldset label,
+.work__fieldset label {
+    display: flex;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.addon__fieldset label:last-child,
+.work__fieldset label:last-child {
+    margin: 0;
+}
+
+.addon__fieldset div,
+.work__fieldset div {
+    margin-bottom: 10px;
+}
+
+.booking__form label {
+    display: block;
+}
+
+#shapes {
+    min-height: 48px;
+    margin-top: 10px;
+}
+
+#shapes {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+}
+
+#shapes option {
+    text-align: center;
+}
+
+.date__fieldset input,
+.name__fieldset input {
+    display: block;
+    min-height: 48px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.booking__main #submit-button {
+    min-height: 48px;
+    width: 100%;
+    margin: 0;
+}

@@ -1,0 +1,32 @@
+@media screen and (min-width: 800px) {
+    .main h1 {
+        margin: -30px auto 10px;
+    }
+
+    .main__button {
+        max-width: 750px;
+        min-height: 40px;
+    }
+
+    .main__button:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .main__intro,
+    .add-ons,
+    .main__pricelist {
+        max-width: 750px;
+    }
+
+    .main__pricelist_p,
+    .main__addon_p {
+        font-size: 18px;
+    }
+
+    .main__pricelist h2,
+    .add-ons h2 {
+        font-size: 20px;
+    }
+
+}

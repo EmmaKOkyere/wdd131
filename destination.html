@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ghana's top destinations including Cape Coast, Kakum National Park, Lake Volta, and more.">
+    <title>WDD 131 - Destinations - Discover Ghana</title>
+    <meta name="author" content="Emmanuel Okyere">
+    <link rel="stylesheet" href="styles/kay.css">
+    <link rel="stylesheet" href="destination.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Discover Ghana</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="kay.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="destination.html" class="nav-link active">Destinations</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Explore Ghana's Destinations</h1>
+                <p>Discover the beauty, culture, and adventure that awaits you</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Destinations</button>
+                    <button class="filter-btn" data-filter="historical">Historical</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Grid -->
+        <section class="destinations-section">
+            <div class="container">
+                <div class="destinations-grid" id="destinations-grid">
+                    <!-- Destinations will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Destination Modal -->
+        <div id="destination-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-body">
+                    <!-- Modal content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Discover Ghana</h3>
+                    <p>Your trusted companion for exploring Ghana's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="planner.html">Trip Planner</a></li>
+                    </ul>
+                </div>
+            </div>
+           <footer class="footer">
+               <p><span id="currentyear">©</span> 👔 Emmanuel Okyere 👔 Accra - Ghana</p>
+               <p id="lastModified">Last Modified: </p>
+            </footer>
+        </div>
+    </footer>
+
+    <script src="scripts/kay.js"></script>
+    <script src="destinations.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@media screen and (min-width: 800px) {
+    .faq__main h1 {
+        font-size: 22px;
+    }
+
+    .faq__container {
+        width: 60%;
+        height: 100vh;
+    }
+
+    .faq__question {
+        font-size: 18px;
+    }
+
+    .faq__answer p {
+        font-size: 16px;
+    }
+}

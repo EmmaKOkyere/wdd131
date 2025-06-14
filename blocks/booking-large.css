@@ -1,0 +1,16 @@
+@media screen and (min-width: 800px) {
+
+    .booking__form select,
+    .booking__form input {
+        cursor: pointer;
+    }
+
+    .booking__main h1 {
+        font-size: 24px;
+    }
+
+    .booking__main #submit-button:hover {
+        background-color: var(--princeton-orange);
+        color: var(--white);
+    }
+}

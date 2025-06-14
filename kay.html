@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ghana's beautiful destinations, rich culture, and plan your perfect trip with our comprehensive travel guide.">
+    <title>WDD 131 - Discover Ghana - Your Ultimate Travel Companion</title>
+    <meta name="author" content="Emmanuel Okyere">
+    <link rel="stylesheet" href="styles/kay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Discover Ghana</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="destination.html" class="nav-link">Destinations</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Ghana</h1>
+                <p>Experience the warmth, culture, and natural beauty of West Africa's gem</p>
+                <button class="cta-button" onclick="scrollToSection('featured')">Explore Destinations</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/ghana-image.webp" 
+                     alt="Beautiful Ghana landscape" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section id="featured" class="featured-destinations">
+            <div class="container">
+                <h2>Featured Destinations</h2>
+                <div class="destinations-grid" id="destinations-grid">
+                    <!-- Destinations will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 id="visitor-count">0</h3>
+                        <p>Happy Visitors</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>16</h3>
+                        <p>Regions to Explore</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Cultural Festivals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Get the latest travel tips and destination updates</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div id="newsletter-message" class="message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Discover Ghana</h3>
+                    <p>Your trusted companion for exploring Ghana's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="planner.html">Trip Planner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+               <p><span id="currentyear">©</span> 👔 Emmanuel Okyere 👔 Accra - Ghana</p>
+               <p id="lastModified">Last Modified: </p>
+            </footer>
+        </div>
+    </footer>
+
+    <script src="scripts/kay.js"></script>
+</body>
+</html>
